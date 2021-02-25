@@ -218,7 +218,7 @@ section {
       width: 400px;
       height: 400px;
   }
-  .contact-info div {    /* did not understand it */
+  .contact-info div  {    /* did not understand it */
       width: 410px; 
       display: inline-block;   
       vertical-align: top;
@@ -226,17 +226,19 @@ section {
       margin: 30px 0 0 60px;
       color: white;
   }
- .contact h3 {
+ .contactinfo h3 {
      color: #fce138;
      font-size: 32px;
  }
- .contact p, .contact address {
+ .contact-info, .contact-info address {
      color: white;
      margin: 20px 0;
      line-height: 1.5;
      font-size: 20px;
      font-style: normal;
  }
-.contact a {
+.contact-info a {
 color: #fce138;
 }
+
+/* Reach OUT STYLES END */

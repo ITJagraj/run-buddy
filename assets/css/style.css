@@ -152,20 +152,55 @@ section {
     margin: 0 auto; /* make the paragraph to the centre 0 means top,right and auto means botton, left */
 }
 .steps {
-    text-align: center;
     background-color: #fce138;
+}
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 /*remove this rule too because of DRY (dont repeat yourself which means code */
 .step h2 {
 
 }
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-text {
+    flex: 12;
+}
+.step-img img {
+    max-width: 100;
+}
+.steps-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.step h3 {
+    flex: 1 30%
+}
+.step-info {
+    flex: 2 70% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .section-title {
   font-size: 55px;
-  display: inline-block;
-  padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
   margin-bottom: 35px;
   color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 .primary-border {
     border-color: #39a6b2;
@@ -175,32 +210,39 @@ section {
     border-color: #39a6b2;
 }
 .steps div {
-    margin-bottom: 80px;
 }
 .steps img {
-    color: #024e76;
-    width: 15%;
-    margin-top: 10px;
 }
-.steps p {
+.step-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
+}
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+.step-text p {
+
 }
 .steps span {
-    font-size: 38px;
 }
 .steps span h3 {
     font-size: 46px;
 }
 .trainers {
-    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .trainer {
-    width: 900px;
-    margin: 0 auto 30px auto; /* auto means take whatever space is unused and distrubute it */
+    margin: 20px; /* auto means take whatever space is unused and distrubute it */
     background: #024e76;
     color: #fce138;
-    overflow: auto;
+    flex: 1;
 }
 .trainer img {
     width: 35%;
@@ -217,22 +259,26 @@ section {
 .text-right {
     text-align: right;
 }
+.flex-row {
+    display: flex;
+  }
 .trainer-bio h3 {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 28px;
 }
 .trainer-bio h4 {
     font-weight: lighter;
-    font-size: 26px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 .trainer-bio p {
     font-size: 17px;
+    
+}
+.trainer-bio {
     line-height: 1.3;
 }
 /*REACH OUT STYLES START */
 .contact {
-    text-align: center;
     background: #024e76;
   }
   .contact h2 {

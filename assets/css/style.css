@@ -3,6 +3,11 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 /*apply styles to <header> */
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+  }
 header {
     padding: 20px 35px;
     background-color: #39a6b2;

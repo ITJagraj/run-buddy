@@ -226,7 +226,8 @@ section {
     align-items: center;
 }
 .step h3 {
-    flex: 1 30%
+    flex: 1 30%;
+    color: #024e76
 }
 .step-info {
     flex: 2 70% ;
@@ -414,6 +415,7 @@ section {
     position: absolute;
     left: -29px;
     top: -3px;
+    background-image: radial-gradient(circle, #39a6b2, #024e76);
   }
   .checkbox-wrapper label::after {
     content: "";
@@ -426,9 +428,14 @@ section {
     top: 1px;
     transform: rotate(-58deg);
   }
-  .checkbox-wrapper input:checked, .radio-wrapper input:checked {
-    opacity: 1;
-  }
+  .checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
 /* Reach OUT STYLES END */
 
 @media screen and (max-width: 980) {
